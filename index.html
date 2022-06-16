@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS v5.0.2 -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"  integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+  </head>
+  <body>
+      <div class="container border border-2 mt-5 p-3 rounded">
+        <h1 class="text-center pt-5">Mi Inventario</h1>
+             
+        <!-- Button trigger modal -->
+        <div class="botone py-2 w-50 mx-auto  ">
+            <button type="button" class="btn btn-primary my-3 p-2 w-100 d-block" data-bs-toggle="modal" data-bs-target="#agregar">
+                Agregar Tarea
+            </button>
+            <button type="button" class="btn btn-secondary my-3 p-2 w-100 d-block " data-bs-toggle="modal" data-bs-target="#mostrar" id="btn-mostrar">
+                    Mostrar Tarea
+            </button>
+            
+        </div>
+        <div class="modales">
+            <!-- Modal -->
+            <div class="modal fade" id="agregar" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">AGREGAR UNA RECURSOS</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <form class="text-start">
+                            <div class="mb-3">
+                                <label for="exampleInputEmail1" class="form-label">Ingrese Materiales</label>
+                                <div class="mb-3">
+                                  <textarea class="form-control" name=""  rows="3" id="materiales" ></textarea>
+                                </div>
+                              </div>
+                              <div class="mb-3">
+                                <label for="exampleInputEmail1" class="form-label">Ingrese Fecha</label>
+                                <input type="date" class="form-control" id="fecha" aria-describedby="emailHelp" >
+                              </div>
+                              <!-- <button type="button" class="btn btn-primary" id="btn-agregar">Agregar</button> -->
+                             <div class="alert-formulario" id="alert-formulario"></div>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                    <button type="button" class="btn btn-primary" id="btn-agregar">Agregar</button>
+                    </div>
+                </div>
+                </div>
+            </div>
+
+            <div class="modal fade" id="mostrar" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-scrollable">
+                <div class="modal-content">
+                    <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">MOSTRAR RECURSOS</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                      <div class="alerts" id="alerts">
+                        <div class="alert alert-primary " role="alert">
+                          <strong>10/43/45</strong>
+                          <br>
+                          <strong >Check it out! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Expedita aliquam iste, saepe soluta vel, aliquid blanditiis error natus praesentium odit, optio nulla distinctio ut dolore quis placeat cupiditate alias quae.</strong>
+                          <br>
+                          <div class="boton-eliminar text-end">
+                            <button type="button" class="btn-close  bg-primary p-2 " aria-label="Close"></button>
+                          </div>
+                        </div>
+                      </div>
+                        
+                    </div>
+                    <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </div>
+        </div>
+
+      </div>
+    <!-- Bootstrap JavaScript Libraries -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    <script src="JS/main.js"></script>
+  </body>
+</html>
